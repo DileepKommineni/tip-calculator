@@ -1,0 +1,24 @@
+body{
+    color: white;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, #0F2027, #2C5364);
+}
+
+#container{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    margin: 100px auto;
+    border: 5px solid;
+    border-color: whitesmoke;
+}
+
+.bill-heading{
+    background-color: sienna;
+    color: wheat;
+    font-size: 33px;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
