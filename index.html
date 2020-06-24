@@ -10,20 +10,34 @@
     <script src="./js/all.js" ></script>
     <!-- csss -->
     <link rel="stylesheet" href="./css/main.css">
+    
 </head>
 <body>
     <div id="container">
         <p class="bill-heading">Tip Calculator</p>
-        <form class="form1">
-            <p>How much was the bill?</p>
-            Rupees:<input type="text" placeholder="Bill Amount" class=bill-amount/>
-            <p>How was the service</p>
-            
+        <form class="form1 ml-2">
+            <p class="my-2">How much was the bill?</p>
+            Rupees : <input type="text" placeholder="Bill Amount" id="totalbill" class="bill-amount my-2"/>
+            <p class="my-2">How was the service</p>
+            <select id="service" class="my-2">
+                <option value="0" disabled selected >Choose an option</option>
+                <option value="0.3">Excellent</option>
+                <option value="0.2">Good</option>
+                <option value="0.1">Average</option>
+                <option value="0.05">Bad</option>
+            </select>
+            <p class="my-2">How many people are sharing the bill?</p>
+            <input type="text" placeholder="No of people" id="no-people" class="my-2"/> People
         </form>
+        <button type="button" id="calculate" class="my-2 ml-2" onclick="calculateTip()">Calculate!</button>
+        <div id="totaltip" class="my-2 ml-2 text-success"></div>
     </div>
     <!-- jquery -->
     <script src="./js/jquery-3.5.1.min.js"></script>
     <!-- bootstrap js -->
     <script scr="./js/bootstrap.bundle.min.js"></script>
+    <!-- js -->
+    <script src="./js/calculatetip.js"></script>
+    
 </body>
 </html>
